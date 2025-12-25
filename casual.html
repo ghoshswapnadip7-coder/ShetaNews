@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheta Bhanga News</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* HEADER */
+        header {
+            background: #b30000;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* BREAKING NEWS */
+        .breaking {
+            background: black;
+            color: yellow;
+            padding: 10px;
+            font-weight: bold;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .breaking span {
+            animation: move 15s linear infinite;
+            display: inline-block;
+        }
+
+        @keyframes move {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        /* MAIN LAYOUT */
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* MAIN NEWS */
+        .main-news {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .main-news img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .main-news h2 {
+            margin-top: 15px;
+            color: #b30000;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .sidebar h3 {
+            border-bottom: 2px solid #b30000;
+            padding-bottom: 5px;
+        }
+
+        .news-item {
+            margin-bottom: 15px;
+        }
+
+        .news-item a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .news-item a:hover {
+            color: #b30000;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sheta Bhanga News</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Politics</a>
+        <a href="#">Sports</a>
+        <a href="#">Tech</a>
+        <a href="#">Entertainment</a>
+    </nav>
+</header>
+
+<div class="breaking">
+    <span>🚨 BREAKING: Big political update | Market hits new high | Heavy rain alert in Bengal 🚨</span>
+</div>
+
+<div class="container">
+
+    <div class="main-news">
+        <img src="https://via.placeholder.com/800x400" alt="News Image">
+        <h2>Major Breaking News Headline Goes Here</h2>
+        <p>
+            This is the main breaking news content. You can write full details here.
+            Sheta Bhanga News brings you fast, trusted and bold journalism.
+        </p>
+    </div>
+
+    <div class="sidebar">
+        <h3>Latest News</h3>
+
+        <div class="news-item">
+            <a href="#">👉 Government announces new scheme</a>
+        </div>
+
+        <div class="news-item">
+            <a href="#">👉 Cricket team wins thrilling match</a>
+        </div>
+
+        <div class="news-item">
+            <a href="#">👉 New smartphone launched today</a>
+        </div>
+
+        <div class="news-item">
+            <a href="#">👉 Movie breaks box office record</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Sheta Bhanga News | All Rights Reserved
+</footer>
+
+</body>
+</html>
